@@ -1,0 +1,7 @@
+adrianhumphreys.silverstripe
+dbaeumer.vscode-eslint
+eamodio.gitlens
+esbenp.prettier-vscode
+PeterJausovec.vscode-docker
+remimarsal.prettier-now
+VisualStudioExptTeam.vscodeintellicode
