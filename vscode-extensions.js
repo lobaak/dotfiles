@@ -9,14 +9,16 @@ GitHub.vscode-pull-request-github
 guillaumedoutriaux.name-that-color
 jcbuisson.vue
 jpoissonnier.vscode-styled-components
+kevinkyang.auto-comment-blocks
 kumar-harsh.graphql-for-vscode
 lXSPandora.vscode-styled-components-snippets
 mikestead.dotenv
+NuclleaR.vscode-extension-auto-import
 octref.vetur
 paulmolluzzo.convert-css-in-js
 PeterJausovec.vscode-docker
 Prisma.vscode-graphql
-remimarsal.prettier-now
+shinnn.stylelint
 visioncan.vscode-jss-snippets
 VisualStudioExptTeam.vscodeintellicode
 wix.vscode-import-cost
