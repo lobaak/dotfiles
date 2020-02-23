@@ -1,17 +1,28 @@
 {
-  "typescript.referencesCodeLens.enabled": false,
   "window.zoomLevel": 0,
   "editor.insertSpaces": true,
   "editor.detectIndentation": true,
   "editor.suggestSelection": "first",
-  "editor.glyphMargin": false,
   "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
   "workbench.colorTheme": "Tomorrow Night Blue",
   "workbench.activityBar.visible": true,
   "workbench.sideBar.location": "left",
+  "workbench.editor.showTabs": true,
+  "workbench.colorCustomizations": {
+    "terminal.ansiBrightBlack": "#fff",
+  },
   "files.trimTrailingWhitespace": true,
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "importCost.javascriptExtensions": ["\\.jsx?$"],
+  "search.exclude": {
+    "**/node_modules": true
+  },
+  "search.useIgnoreFiles": true,
   // Git
   "git.autofetch": true,
   "gitlens.views.fileHistory.enabled": true,
@@ -32,38 +43,27 @@
     "vue": "html",
     "js": "html",
     "ss": "html",
-    "Silverstripe": "html"
+    "Silverstripe": "html",
+    "blade": "html",
   },
-  // Search
-  "search.location": "sidebar",
-  "search.exclude": {
-    "**/node_modules": true
-  },
-  "search.useIgnoreFiles": true,
   // Styles
   "stylelint.enable": true,
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
   "scss.validate": false,
   "css.validate": false,
   // ESLint
   "eslint.enable": true,
-  "eslint.autoFixOnSave": true,
-  "eslint.packageManager": "yarn",
   "eslint.validate": [
-    {
-      "autoFix": true,
-      "language": "javascript"
-    },
-    {
-      "autoFix": true,
-      "language": "vue"
-    },
-    {
-      "autoFix": true,
-      "language": "javascriptreact"
-    }
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  // Other
+  "eslint.codeActionsOnSave.mode": "all",
+  "gitlens.hovers.currentLine.over": "line",
+  "typescript.referencesCodeLens.enabled": false,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "importCost.javascriptExtensions": [
+    "\\.jsx?$"
   ],
 }
