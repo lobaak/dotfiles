@@ -8,9 +8,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-  },
   "workbench.colorTheme": "Tomorrow Night Blue",
   "workbench.activityBar.visible": true,
   "workbench.sideBar.location": "left",
@@ -27,6 +24,7 @@
   "git.autofetch": true,
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
+  "gitlens.hovers.currentLine.over": "line",
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
@@ -60,10 +58,17 @@
   ],
   // Other
   "eslint.codeActionsOnSave.mode": "all",
-  "gitlens.hovers.currentLine.over": "line",
   "typescript.referencesCodeLens.enabled": false,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "importCost.javascriptExtensions": [
     "\\.jsx?$"
   ],
+  "files.insertFinalNewline": true,
+  "[typescriptreact]": {
+    // "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
