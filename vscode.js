@@ -1,20 +1,33 @@
 {
-  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Slack Theme Dark Mode",
   "editor.insertSpaces": true,
   "editor.detectIndentation": true,
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "editor.codeActionsOnSave": {
+    "source.fixAll": true,
     "source.fixAll.eslint": true
   },
-  "workbench.colorTheme": "Tomorrow Night Blue",
+  "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+  "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+  "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+  "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
   "workbench.activityBar.visible": true,
   "workbench.sideBar.location": "left",
   "workbench.editor.showTabs": true,
   "workbench.colorCustomizations": {
-    "terminal.ansiBrightBlack": "#fff",
+    "terminal.ansiBrightBlack": "#fff"
   },
+  "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "search.exclude": {
     "**/node_modules": true
@@ -22,12 +35,8 @@
   "search.useIgnoreFiles": true,
   // Git
   "git.autofetch": true,
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true,
   "gitlens.hovers.currentLine.over": "line",
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
-  },
+  "gitlens.views.repositories.files.layout": "list",
   // Emmet
   "emmet.syntaxProfiles": {
     "vue-html": "html",
@@ -42,33 +51,31 @@
     "js": "html",
     "ss": "html",
     "Silverstripe": "html",
-    "blade": "html",
+    "blade": "html"
   },
   // Styles
-  "stylelint.enable": true,
   "scss.validate": false,
   "css.validate": false,
   // ESLint
-  "eslint.enable": true,
+  "eslint.format.enable": true,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+    "vue"
   ],
   // Other
-  "eslint.codeActionsOnSave.mode": "all",
   "typescript.referencesCodeLens.enabled": false,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "importCost.javascriptExtensions": [
-    "\\.jsx?$"
-  ],
-  "files.insertFinalNewline": true,
-  "[typescriptreact]": {
-    // "editor.defaultFormatter": "vscode.typescript-language-features"
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "importCost.javascriptExtensions": ["\\.jsx?$"],
+  "npm-intellisense.importES6": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.iconTheme": "material-icon-theme",
+  "vs-kubernetes": {
+    "vscode-kubernetes.kubectl-path.mac": "/Users/nathan/.vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.minikube-path.mac": "/Users/nathan/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+    "vscode-kubernetes.helm-path.mac": "/Users/nathan/.vs-kubernetes/tools/helm/darwin-amd64/helm"
   },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "security.workspace.trust.untrustedFiles": "open"
 }
