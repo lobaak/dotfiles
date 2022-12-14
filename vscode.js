@@ -6,15 +6,10 @@
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
     "source.fixAll.eslint": true
   },
   "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
@@ -63,12 +58,19 @@
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "vue"
+    "vue",
+    "mdx",
+    "md"
   ],
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".md", ".mdx", ".ts", ".tsx"]
+  },
+  "eslint.debug": true,
   // Other
   "typescript.referencesCodeLens.enabled": false,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "importCost.javascriptExtensions": ["\\.jsx?$"],
+  "importCost.javascriptExtensions": ["\\.jsx?$", "\\.js?$"],
+  "importCost.typescriptExtensions": ["\\.tsx?$", "\\.ts?$"],
   "npm-intellisense.importES6": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "workbench.iconTheme": "material-icon-theme",
@@ -77,5 +79,9 @@
     "vscode-kubernetes.minikube-path.mac": "/Users/nathan/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
     "vscode-kubernetes.helm-path.mac": "/Users/nathan/.vs-kubernetes/tools/helm/darwin-amd64/helm"
   },
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDelete": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "npm.keybindingsChangedWarningShown": true,
+  "redhat.telemetry.enabled": false
 }
