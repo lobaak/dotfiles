@@ -6,13 +6,12 @@ eamodio.gitlens
 EditorConfig.EditorConfig
 esbenp.prettier-vscode
 felipe-mendes.slack-theme
+GitHub.copilot
 GraphQL.vscode-graphql
 GraphQL.vscode-graphql-syntax
 kevinkyang.auto-comment-blocks
 mgmcdermott.vscode-language-babel
 mikestead.dotenv
-ms-azuretools.vscode-docker
-ms-kubernetes-tools.vscode-kubernetes-tools
 paulmolluzzo.convert-css-in-js
 PKief.material-icon-theme
 pmneo.tsimporter
