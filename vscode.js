@@ -16,6 +16,8 @@
   "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
   "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
   "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "./node_modules/typescript/lib",
   "workbench.activityBar.visible": true,
   "workbench.sideBar.location": "left",
   "workbench.editor.showTabs": true,
@@ -83,5 +85,16 @@
   "explorer.confirmDelete": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "npm.keybindingsChangedWarningShown": true,
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": true
+  },
+  "http.proxySupport": "on",
+  "http.proxy": "https://localhost:3128",
+  "terminal.integrated.env.osx": {}
+  // "http.proxyStrictSSL": false
 }
