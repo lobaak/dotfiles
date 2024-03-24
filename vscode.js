@@ -1,16 +1,16 @@
 {
-  "workbench.colorTheme": "Slack Theme Dark Mode",
   "editor.insertSpaces": true,
   "editor.detectIndentation": true,
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
+
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
   "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
@@ -18,16 +18,16 @@
   "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.tsdk": "./node_modules/typescript/lib",
-  "workbench.activityBar.visible": true,
   "workbench.sideBar.location": "left",
-  "workbench.editor.showTabs": true,
+  "workbench.editor.showTabs": "multiple",
   "workbench.colorCustomizations": {
     "terminal.ansiBrightBlack": "#fff"
   },
-  "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
+  "files.eol": "\r\n",
   "search.exclude": {
-    "**/node_modules": true
+    "**/node_modules": true,
+    "**/build": true
   },
   "search.useIgnoreFiles": true,
   // Git
@@ -70,31 +70,33 @@
   "eslint.debug": true,
   // Other
   "typescript.referencesCodeLens.enabled": false,
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "importCost.javascriptExtensions": ["\\.jsx?$", "\\.js?$"],
   "importCost.typescriptExtensions": ["\\.tsx?$", "\\.ts?$"],
-  "npm-intellisense.importES6": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.iconTheme": "material-icon-theme",
-  "vs-kubernetes": {
-    "vscode-kubernetes.kubectl-path.mac": "/Users/nathan/.vs-kubernetes/tools/kubectl/kubectl",
-    "vscode-kubernetes.minikube-path.mac": "/Users/nathan/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-    "vscode-kubernetes.helm-path.mac": "/Users/nathan/.vs-kubernetes/tools/helm/darwin-amd64/helm"
-  },
   "security.workspace.trust.untrustedFiles": "open",
   "explorer.confirmDelete": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "npm.keybindingsChangedWarningShown": true,
   "redhat.telemetry.enabled": false,
   "editor.inlineSuggest.enabled": true,
+
   "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": false,
-    "markdown": true
+    "*": true
   },
-  "http.proxySupport": "on",
-  "http.proxy": "https://localhost:3128",
-  "terminal.integrated.env.osx": {}
+  // "http.proxy": "http://localhost:3128",
   // "http.proxyStrictSSL": false
+  "http.proxy": "http://localhost:3128",
+  "http.proxyStrictSSL": false,
+  "terminal.integrated.env.osx": {},
+  "files.insertFinalNewline": true,
+  "[shellscript]": {
+    "editor.formatOnSave": false
+  },
+  "[ignore]": {
+    "editor.formatOnSave": false
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "hediet.vscode-drawio.resizeImages": null,
+  "security.promptForLocalFileProtocolHandling": false,
+  "vitest.enable": true,
+  "vitest.commandLine": "npx vitest"
 }
